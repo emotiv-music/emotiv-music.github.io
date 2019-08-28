@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="scroll-nice">
+	<head>
+		<title>Emotiv</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#212121">
+		<meta name="msapplication-navbutton-color" content="#212121">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/paper.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:600,700">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.0.1/typeit.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	</head>
+
+	<body style="background: #212121; overflow-x: hidden; overflow-y: scroll;">
+
+		<div class="navbar-fixed hide-on-med-and-down">
+			<nav class="nav-no-shadow">
+				<div class="nav-wrapper nav-dark-clear">
+					<a href="#" class="scroll-link brand-logo subtitle-font nav-text nav-text-light"><span class="hide-on-med-and-down">&nbsp;&nbsp;&nbsp;&nbsp;</span>emotiv</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a class="scroll-link nav-text nav-text-light subtitle-font" href="#about">About</a></li>
+						<li><a class="scroll-link nav-text nav-text-light subtitle-font" href="#demo">Demo</a></li>
+						<li><a class="scroll-link nav-text nav-text-light subtitle-font" href="#data">Data</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+<div style="height: 120vh;"></div>
+
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    <svg class="show-on-landscape-only" viewBox="0 0 1000 1000" style="position: absolute; left: 0; top: 0;">
+
+    <path class="wobble1" fill="#373737" stroke="#373737"
+        d="M -100,0 v 430 c 20.0,0 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 v -430 Z" />
+
+    <path class="wobble2" fill="#343434" stroke="#343434"
+        d="M -100,0 v 360 c 20.0,0 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 v -360 Z" />
+
+    <path class="wobble3" fill="#313131" stroke="#313131"
+        d="M -100,0 v 290 c 20.0,0 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 v -290 Z" />
+
+    <path class="wobble4" fill="#2d2d2d" stroke="#2d2d2d"
+        d="M -100,0 v 220 c 20.0,0 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 v -220 Z" />
+
+    <path class="wobble5" fill="#2a2a2a" stroke="#2a2a2a"
+        d="M -100,0 v 150 c 20.0,0 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 v -150 Z" />
+
+    <path class="wobble6" fill="#262626" stroke="#262626"
+        d="M -100,0 v 80 c 20.0,0 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 v -80 Z" />
+
+    </svg>
+</div>
+
+
+<div id="search" class="show-on-landscape-only">
+    <p class="title-font grey-text text-lighten-4 fsize-xm center-align">Music makes me <span id="buzzwords" style="color: #C96363 !important;"></span></p>
+</div>
+
+<div id="search-mobile" class="show-on-portrait-only">
+    <div class="title-font grey-text text-lighten-4 fsize-h">Music<br/>makes<br/>me<br/><span id="buzzwords" style="color: #C96363 !important;"></span></div>
+</div>
+
+<div id="scroll-prompt" class="prompt">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40.05px" height="35.69px" viewBox="-8.369 -3.009 40.05 35.69" enable-background="new -8.369 -3.009 40.05 35.69" xml:space="preserve" class="svg-scroll">
+        <g>
+            <path d="M12.406,32.394l7.6-7.601l0,0l11.301-11.2c0.5-0.5,0.5-1.199,0-1.699l-2.301-2.301c-0.5-0.5-1.199-0.5-1.699,0l-14.9,14.9
+                c-0.5,0.5-1.2,0.5-1.701,0l-14.8-14.9c-0.5-0.5-1.2-0.5-1.7,0l-2.199,2.2c-0.5,0.5-0.5,1.2,0,1.7l11.199,11.2l0,0l7.601,7.6
+                C11.206,32.793,12.006,32.793,12.406,32.394"/>
+        </g>
+    </svg>
+</div>
+
+
+<div class="space-5"></div>
+
+<div style="background: #212121; width: 100%;">
+
+    <svg viewBox="0 0 1000 60" style="margin-bottom: -10px;">
+    <path class="wobble0" fill="#F5F5F5"
+        d="M -100,60 v -20 c 20.0,0 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 v 60 Z" />
+    </svg>
+    <div class="grey lighten-4">
+        <div class="grey-text text-darken-4 container">
+            <div class="space-12"></div>
+            <div id="about">
+                <div class="title-font reveal-fast fsize-l hide-on-small-only">
+                    About
+                </div>
+                <div class="subtitle-font reveal-fast fsize-m hide-on-small-only">
+                    <br/>Explore Music Through Emotion
+                </div>
+                <div class="title-font center-align reveal-fast fsize-l show-on-small-only">
+                    About
+                </div>
+                <div class="subtitle-font center-align reveal-fast fsize-xm show-on-small-only">
+                    <br/>Explore Music Through Emotion
+                </div>
+            </div>
+            <div class="space-5"></div>
+            <div class="para-font reveal-slow fsize-m- hide-on-med-and-down">
+                Aiming to surface the underlying way people interact with music, Emotiv Music has developed a method to classify music based off emotion.<br/><br/>
+                The company has three goals:
+                <ol>
+                <li>Bring light to the way we already <span class="title-font" style="color: #C96363 !important;">interact</span> with music. Imagine a program that understands your current mood, and fits music that aligns with it.<br/><br/></li>
+                <li>Use music as a <span class="title-font" style="color: #C96363 !important;">historical</span> tool. Imagine being able to look back over the last hundred years and seeing how the emotion of music has evolved. Was the world happier during the 60s hippie movement versus the 30s and the Great Depression?<br/><br/></li>
+                <li>Tool for <span class="title-font" style="color: #C96363 !important;">artists</span> to understand what makes music have the emotion it does. What words have been popular in different genres/time periods. Imagine a rapper who wants to learn the words of popular angry rap songs in the 80s to try to bring the 80s back!</li>
+                </ol>
+            </div>
+            <div class="para-font reveal-slow flow-text show-on-med-and-down">
+                Aiming to surface the underlying way people interact with music, Emotiv Music has developed a method to classify music based off emotion.<br/><br/>
+                The company has three goals:
+                <ol>
+                <li>Bring light to the way we already <span class="title-font" style="color: #C96363 !important;">interact</span> with music. Imagine a program that understands your current mood, and fits music that aligns with it.<br/><br/></li>
+                <li>Use music as a <span class="title-font" style="color: #C96363 !important;">historical</span> tool. Imagine being able to look back over the last hundred years and seeing how the emotion of music has evolved. Was the world happier during the 60s hippie movement versus the 30s and the Great Depression?<br/><br/></li>
+                <li>Tool for <span class="title-font" style="color: #C96363 !important;">artists</span> to understand what makes music have the emotion it does. What words have been popular in different genres/time periods. Imagine a rapper who wants to learn the words of popular angry rap songs in the 80s to try to bring the 80s back!</li>
+                </ol>
+            </div>
+            <div class="space-12"></div>
+        </div>
+    </div>
+    <svg viewBox="0 0 1000 60" style="margin-top: -5px;">
+    <path class="wobble0" fill="#F5F5F5"
+        d="M -100,0 v 60 c 20.0,0 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 v -60 Z" />
+    </svg>
+    <div class="space-20"></div>
+    
+    <div id="data" class="grey-text text-lighten-4 container">
+        <div class="title-font reveal-fast fsize-xm hide-on-med-and-down">
+            Data Visualized
+        </div>
+        <div class="title-font reveal-fast fsize-ls show-on-med-only">
+            Data Visualized
+        </div>
+        <div class="title-font center-align reveal-fast fsize-ls show-on-small-only">
+            Data Visualized
+        </div>
+
+        <!-- <div class="space-12"></div>
+
+        <canvas id="graph80s"></canvas> -->
+
+        <div class="space-12"></div>
+
+        <canvas id="graphgenrebar"></canvas>
+
+        <div class="space-12"></div>
+
+        <canvas id="graphemotionline"></canvas>
+
+        <div class="space-12"></div>
+
+        <canvas id="graphemotionbar"></canvas>
+    </div>
+    <div class="space-20"></div>
+    <div class="space-20"></div>
+
+</div>
+
+		<svg viewBox="0 0 1000 60" style="margin-bottom: -10px;">
+	    <path class="wobble0" fill="#F5F5F5"
+	        d="M -100,60 v -20 c 20.0,0 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 s 30.0,40 50,40 s 30.0,-40 50,-40 v 60 Z" />
+	    </svg>
+
+		<script type="text/javascript" src="anime.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+
+		<footer class="page-footer grey-bg">
+        <div class="container">
+          	<div class="row">
+	            <div class="col l6 s12">
+	            	<h5 class="title-font grey-text text-darken-4">emotiv Music</h5>
+	            	<a class="para-font grey-text text-darken-1" href="mailto:contact@emotivmusic.com">contact@emotivmusic.com</a>
+	          	</div>
+
+	          	<div class="col l5 offset-l1 s12">
+	          		<div class="show-on-small-only">
+		            	<h5 class="title-font grey-text text-darken-4">Creators</h5>
+		            	<ul>
+		            		<li><div class="divider grey darken-4" style="margin-bottom: 10px;"></div></li>
+		              		<li><a class="para-font grey-text text-darken-3" href="https://www.linkedin.com/in/joshua-bragg/" target="_blank" rel="noopener">Joshua Bragg</a></li>
+		              		<li><a class="para-font grey-text text-darken-3" href="https://www.linkedin.com/in/conor-vedova/" target="_blank" rel="noopener">Conor Vedova</a></li>
+		              		<li><a class="para-font grey-text text-darken-3" href="https://www.linkedin.com/in/shardul-bansal/" target="_blank" rel="noopener">Shardul Bansal</a></li>
+		              		<li><a class="para-font grey-text text-darken-3" href="https://www.linkedin.com/in/veniamin-v-bb1985116/" target="_blank" rel="noopener">Venia Veselovsky</a></li>
+		            	</ul>
+	          		</div>
+	          		<div class="hide-on-small-only">
+		            	<h5 class="title-font grey-text text-darken-4">Creators</h5>
+	          			<div class="row">
+	          				<div class="col m12">
+	          					<div class="divider grey darken-4" style="margin-bottom: 10px;"></div>
+	          				</div>
+	          				<div class="col m6">
+	          					<a class="para-font grey-text text-darken-3" href="https://www.linkedin.com/in/joshua-bragg/" target="_blank" rel="noopener">Joshua Bragg</a><br/>
+	          					<a class="para-font grey-text text-darken-3" href="https://www.linkedin.com/in/conor-vedova/" target="_blank" rel="noopener">Conor Vedova</a><br/>
+	          					<a class="para-font grey-text text-darken-3" href="https://www.linkedin.com/in/shardul-bansal/" target="_blank" rel="noopener">Shardul Bansal</a><br/>
+	          					<a class="para-font grey-text text-darken-3" href="https://www.linkedin.com/in/veniamin-v-bb1985116/" target="_blank" rel="noopener">Venia Veselovsky</a><br/>
+	          				</div>
+	          				<div class="col m6 para-font grey-text text-darken-3">
+	          					<a class="para-font grey-text text-darken-1" href="mailto:joshua@emotivmusic.com">joshua@emotivmusic.com</a><br/>
+	          					<a class="para-font grey-text text-darken-1" href="mailto:conor@emotivmusic.com">conor@emotivmusic.com</a><br/>
+	          					<a class="para-font grey-text text-darken-1" href="mailto:sb@emotivmusic.com">sb@emotivmusic.com</a><br/>
+	          					<a class="para-font grey-text text-darken-1" href="mailto:vv@emotivmusic.com">vv@emotivmusic.com</a><br/>
+	          				</div>
+	          			</div>
+	          		</div>
+	          	</div>
+        	</div>
+      	</div>
+      	<div class="footer-copyright">
+        	<div class="container">
+        		<a class="grey-text text-darken-3 font-para right hide-on-small-only">Copyright &copy; 2019 Emotiv Music</a>
+        		<a class="grey-text text-darken-3 font-para center show-on-small-only">Copyright &copy; 2019 Emotiv Music</a>
+        	</div>
+      	</div>
+    </footer>
+	</body>
+</html>
